@@ -1,0 +1,41 @@
+body {
+  background-color: whitesmoke;
+}
+body::before {
+  display: block;
+  content: "";
+  height: 40px;
+}
+.bmi-explained {
+  text-align: center;
+  margin-right: 2%;
+}
+img {
+  padding-left: 2%;
+}
+.results {
+  margin: auto;
+}
+.calculation {
+  padding: 1%;
+}
+.health-tips {
+  margin: auto;
+}
+.ant-obese {
+  margin: auto;
+}
+h2 {
+  text-align: center;
+}
+
+.footer {
+  text-align: center;
+  padding-right: 1%;
+}
+.footer h4 {
+  margin: 0.3%;
+  font-weight: bold;
+  font-size: 12px;
+  margin: 1% 1% 0 1%;
+}
