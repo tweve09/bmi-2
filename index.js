@@ -11,17 +11,21 @@
         status="UNDERWEIGHT";
         document.getElementById("status").style.color = "blue"; 
     }
-    else if(18.5<=bmi<24.9){
+    else if(bmi>=18.5 && bmi<24.9){
         status="NORMAL"; 
         document.getElementById("status").style.color = "green";
     }
-    else if (24.9<=bmi<29.9){
+    else if ( bmi>24.9 && bmi<29.9){
         status="OVERWEIGHT";
         document.getElementById("status").style.color = "yellow"; 
     }
-    else{
+    else if (bmi > 30 && bmi<=40){
         status="OBESE";
         document.getElementById("status").style.color = "red";
+    }
+    else{
+        status="OBESE (severe)";
+        document.getElementById("status").style.color = "red";  
     }
     document.getElementById("bmi").innerHTML = bmi;
     document.getElementById("status").innerHTML = status;
